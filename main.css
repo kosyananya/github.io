@@ -31,4 +31,34 @@
 .personal-info h2 {
     font-size: 36px;
     letter-spacing: 3px;
+    height: 36px;
+    margin-bottom: 20px;
+}
+.personal-info h4 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.social-media_list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    font-size: 18px; 
+}
+
+.social-media_list  li {
+    margin: 0 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.social-media_list a {
+    color:  #fff;
+    text-decoration: none;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
