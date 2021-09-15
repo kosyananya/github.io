@@ -5,20 +5,13 @@ function FullName(name,surname) {
  
 const person = new FullName("Anya", "Kosyan");
 const personStr = Object.values(person).join(" ")
-let h2 = document.getElementsByClassName("person-name")
-// function addName(name) {
-//     for(let key in name) {
-//         setTimeout(function f(name) {
-//             tagName.textContent += name[key]
-//         },500)
-//     }
-    
-// }
-
-// addName(personStr)
-
-h2.innerHTML = ""
-
-// for(let key in personStr) {
-//         tagName.textContent += personStr[key]
-// }
+let tagName = document.getElementById("person-name")
+let counter = 0
+let addText = setInterval(function(){
+   
+    tagName.textContent += personStr[counter]
+    counter++
+  if(counter === personStr.length) {
+      clearInterval(addText)
+  }
+}, 200);
