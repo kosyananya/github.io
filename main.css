@@ -1,0 +1,34 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top-image_block  {
+    background-image: url('images/1583735326-3342.jpg');
+    background-size: cover;
+    padding: 100px 30px;
+    position: relative;
+}
+
+.top-image_block:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.personal-info {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.personal-info h2 {
+    font-size: 36px;
+    letter-spacing: 3px;
+}
